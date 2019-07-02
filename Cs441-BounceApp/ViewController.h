@@ -10,6 +10,11 @@
 
 @interface ViewController : UIViewController
 
+{
+    IBOutlet UILabel *Football;
+    IBOutlet UILabel *Baseball;
+    IBOutlet UILabel *Tennisball;
+    
+}
 
 @end
-
