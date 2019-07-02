@@ -9,10 +9,23 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+{
+    UIDynamicAnimator *animator;
+    UIGravityBehavior *gravity;
+    UICollisionBehavior *collision;
+    UIDynamicItemBehavior *bounce;
+}
 
 @end
 
 @implementation ViewController
+
+-(IBAction)buttonIsClicked:(id)sender
+{
+    animator = [[UIDynamicAnimator alloc]initWithReferenceView:self.view];
+    
+    gravity = [[UIGravityBehavior alloc]initWithItems:@[Football,Tennisball]];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
