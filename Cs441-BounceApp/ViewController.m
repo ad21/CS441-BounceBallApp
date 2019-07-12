@@ -37,13 +37,14 @@
     bounce = [[UIDynamicItemBehavior alloc]initWithItems:@[Football,Tennisball,Baseball]];
     
     [animator addBehavior:bounce];
+   
+    gravity = [[UIGravityBehavior alloc]initWithItems:@[Football,Tennisball]];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
