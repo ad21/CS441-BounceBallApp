@@ -36,9 +36,10 @@
     
     bounce = [[UIDynamicItemBehavior alloc]initWithItems:@[Football,Tennisball,Baseball]];
     
-    [animator addBehavior:bounce];
-   
-    gravity = [[UIGravityBehavior alloc]initWithItems:@[Football,Tennisball]];
+    bounce.elasticity = 1;
+    
+    [animator addBehavior:bounce];    
+    
 }
 
 - (void)viewDidLoad {
